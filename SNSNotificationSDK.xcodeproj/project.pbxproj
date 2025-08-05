@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C06E87F82E1E374100D72D9F /* SNSNotificationExtensionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06E87F72E1E373C00D72D9F /* SNSNotificationExtensionHelper.swift */; };
+		C08EE8572E2F7228003906F7 /* SNSImageFullscreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08EE8562E2F7219003906F7 /* SNSImageFullscreenViewController.swift */; };
+		C0A2049D2E2E1B1000B7712C /* SNSNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A2049C2E2E1B0A00B7712C /* SNSNotificationViewController.swift */; };
+		C0A2049F2E2E1B5B00B7712C /* SNSLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A2049E2E2E1B5700B7712C /* SNSLocationManager.swift */; };
+		C0AC6E1F2DC8A5C50000330F /* SNSNotificationSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E4ED992DAE34EF00AF2F2B /* SNSNotificationSDK.framework */; };
+		C0AC6E202DC8A5C50000330F /* SNSNotificationSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C0E4ED992DAE34EF00AF2F2B /* SNSNotificationSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C0E4EDA72DAE34EF00AF2F2B /* SNSNotificationSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E4EDA62DAE34EF00AF2F2B /* SNSNotificationSDKTests.swift */; };
+		C0E4EDA82DAE34EF00AF2F2B /* SNSNotificationSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = C0E4ED9C2DAE34EF00AF2F2B /* SNSNotificationSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0E4EDB22DAE355200AF2F2B /* SNSNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E4EDB12DAE355200AF2F2B /* SNSNotificationManager.swift */; };
+		C0F3B8442E1FA58E00A51B8E /* SNSNotificationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F3B8432E1FA58A00A51B8E /* SNSNotificationConstants.swift */; };
+		C0F3B8482E1FAC7400A51B8E /* SNSVideoState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F3B8472E1FAC6C00A51B8E /* SNSVideoState.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0E4EDA32DAE34EF00AF2F2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0E4ED902DAE34EE00AF2F2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0E4ED982DAE34EF00AF2F2B;
+			remoteInfo = SNSNotificationSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C0AC6E212DC8A5C50000330F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C0AC6E202DC8A5C50000330F /* SNSNotificationSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C03A14302E0D2BE20086015A /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		C03A14322E0D2BE20086015A /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		C06E87F72E1E373C00D72D9F /* SNSNotificationExtensionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSNotificationExtensionHelper.swift; sourceTree = "<group>"; };
+		C08EE8562E2F7219003906F7 /* SNSImageFullscreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSImageFullscreenViewController.swift; sourceTree = "<group>"; };
+		C0A2049C2E2E1B0A00B7712C /* SNSNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSNotificationViewController.swift; sourceTree = "<group>"; };
+		C0A2049E2E2E1B5700B7712C /* SNSLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSLocationManager.swift; sourceTree = "<group>"; };
+		C0E4ED992DAE34EF00AF2F2B /* SNSNotificationSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SNSNotificationSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0E4ED9C2DAE34EF00AF2F2B /* SNSNotificationSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SNSNotificationSDK.h; sourceTree = "<group>"; };
+		C0E4EDA12DAE34EF00AF2F2B /* SNSNotificationSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNSNotificationSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0E4EDA62DAE34EF00AF2F2B /* SNSNotificationSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSNotificationSDKTests.swift; sourceTree = "<group>"; };
+		C0E4EDB12DAE355200AF2F2B /* SNSNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSNotificationManager.swift; sourceTree = "<group>"; };
+		C0F3B8432E1FA58A00A51B8E /* SNSNotificationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSNotificationConstants.swift; sourceTree = "<group>"; };
+		C0F3B8472E1FAC6C00A51B8E /* SNSVideoState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSVideoState.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0E4ED962DAE34EF00AF2F2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E4ED9E2DAE34EF00AF2F2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0AC6E1F2DC8A5C50000330F /* SNSNotificationSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C03A142F2E0D2BE20086015A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C03A14302E0D2BE20086015A /* UserNotifications.framework */,
+				C03A14322E0D2BE20086015A /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0E4ED8F2DAE34EE00AF2F2B = {
+			isa = PBXGroup;
+			children = (
+				C0E4ED9B2DAE34EF00AF2F2B /* SNSNotificationSDK */,
+				C0E4EDA52DAE34EF00AF2F2B /* SNSNotificationSDKTests */,
+				C03A142F2E0D2BE20086015A /* Frameworks */,
+				C0E4ED9A2DAE34EF00AF2F2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0E4ED9A2DAE34EF00AF2F2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0E4ED992DAE34EF00AF2F2B /* SNSNotificationSDK.framework */,
+				C0E4EDA12DAE34EF00AF2F2B /* SNSNotificationSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0E4ED9B2DAE34EF00AF2F2B /* SNSNotificationSDK */ = {
+			isa = PBXGroup;
+			children = (
+				C0E4ED9C2DAE34EF00AF2F2B /* SNSNotificationSDK.h */,
+				C0E4EDB12DAE355200AF2F2B /* SNSNotificationManager.swift */,
+				C06E87F72E1E373C00D72D9F /* SNSNotificationExtensionHelper.swift */,
+				C0F3B8432E1FA58A00A51B8E /* SNSNotificationConstants.swift */,
+				C0F3B8472E1FAC6C00A51B8E /* SNSVideoState.swift */,
+				C0A2049C2E2E1B0A00B7712C /* SNSNotificationViewController.swift */,
+				C0A2049E2E2E1B5700B7712C /* SNSLocationManager.swift */,
+				C08EE8562E2F7219003906F7 /* SNSImageFullscreenViewController.swift */,
+			);
+			path = SNSNotificationSDK;
+			sourceTree = "<group>";
+		};
+		C0E4EDA52DAE34EF00AF2F2B /* SNSNotificationSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0E4EDA62DAE34EF00AF2F2B /* SNSNotificationSDKTests.swift */,
+			);
+			path = SNSNotificationSDKTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C0E4ED942DAE34EF00AF2F2B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0E4EDA82DAE34EF00AF2F2B /* SNSNotificationSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C0E4ED982DAE34EF00AF2F2B /* SNSNotificationSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0E4EDAB2DAE34EF00AF2F2B /* Build configuration list for PBXNativeTarget "SNSNotificationSDK" */;
+			buildPhases = (
+				C0E4ED942DAE34EF00AF2F2B /* Headers */,
+				C0E4ED952DAE34EF00AF2F2B /* Sources */,
+				C0E4ED962DAE34EF00AF2F2B /* Frameworks */,
+				C0E4ED972DAE34EF00AF2F2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SNSNotificationSDK;
+			packageProductDependencies = (
+			);
+			productName = SNSNotificationSDK;
+			productReference = C0E4ED992DAE34EF00AF2F2B /* SNSNotificationSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C0E4EDA02DAE34EF00AF2F2B /* SNSNotificationSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0E4EDAE2DAE34EF00AF2F2B /* Build configuration list for PBXNativeTarget "SNSNotificationSDKTests" */;
+			buildPhases = (
+				C0E4ED9D2DAE34EF00AF2F2B /* Sources */,
+				C0E4ED9E2DAE34EF00AF2F2B /* Frameworks */,
+				C0E4ED9F2DAE34EF00AF2F2B /* Resources */,
+				C0AC6E212DC8A5C50000330F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0E4EDA42DAE34EF00AF2F2B /* PBXTargetDependency */,
+			);
+			name = SNSNotificationSDKTests;
+			packageProductDependencies = (
+			);
+			productName = SNSNotificationSDKTests;
+			productReference = C0E4EDA12DAE34EF00AF2F2B /* SNSNotificationSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0E4ED902DAE34EE00AF2F2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					C0E4ED982DAE34EF00AF2F2B = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
+					C0E4EDA02DAE34EF00AF2F2B = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = C0E4ED932DAE34EE00AF2F2B /* Build configuration list for PBXProject "SNSNotificationSDK" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0E4ED8F2DAE34EE00AF2F2B;
+			packageReferences = (
+				C0AC6E122DC8823B0000330F /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */,
+			);
+			productRefGroup = C0E4ED9A2DAE34EF00AF2F2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0E4ED982DAE34EF00AF2F2B /* SNSNotificationSDK */,
+				C0E4EDA02DAE34EF00AF2F2B /* SNSNotificationSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0E4ED972DAE34EF00AF2F2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E4ED9F2DAE34EF00AF2F2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0E4ED952DAE34EF00AF2F2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F3B8442E1FA58E00A51B8E /* SNSNotificationConstants.swift in Sources */,
+				C0E4EDB22DAE355200AF2F2B /* SNSNotificationManager.swift in Sources */,
+				C0A2049D2E2E1B1000B7712C /* SNSNotificationViewController.swift in Sources */,
+				C0A2049F2E2E1B5B00B7712C /* SNSLocationManager.swift in Sources */,
+				C08EE8572E2F7228003906F7 /* SNSImageFullscreenViewController.swift in Sources */,
+				C0F3B8482E1FAC7400A51B8E /* SNSVideoState.swift in Sources */,
+				C06E87F82E1E374100D72D9F /* SNSNotificationExtensionHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0E4ED9D2DAE34EF00AF2F2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0E4EDA72DAE34EF00AF2F2B /* SNSNotificationSDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0E4EDA42DAE34EF00AF2F2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0E4ED982DAE34EF00AF2F2B /* SNSNotificationSDK */;
+			targetProxy = C0E4EDA32DAE34EF00AF2F2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C0E4EDA92DAE34EF00AF2F2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C0E4EDAA2DAE34EF00AF2F2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C0E4EDAC2DAE34EF00AF2F2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 454N62RBVQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.awaken.SNSNotificationSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0E4EDAD2DAE34EF00AF2F2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 454N62RBVQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.awaken.SNSNotificationSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C0E4EDAF2DAE34EF00AF2F2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 454N62RBVQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.awaken.SNSNotificationSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0E4EDB02DAE34EF00AF2F2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 454N62RBVQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.awaken.SNSNotificationSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0E4ED932DAE34EE00AF2F2B /* Build configuration list for PBXProject "SNSNotificationSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E4EDA92DAE34EF00AF2F2B /* Debug */,
+				C0E4EDAA2DAE34EF00AF2F2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0E4EDAB2DAE34EF00AF2F2B /* Build configuration list for PBXNativeTarget "SNSNotificationSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E4EDAC2DAE34EF00AF2F2B /* Debug */,
+				C0E4EDAD2DAE34EF00AF2F2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0E4EDAE2DAE34EF00AF2F2B /* Build configuration list for PBXNativeTarget "SNSNotificationSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E4EDAF2DAE34EF00AF2F2B /* Debug */,
+				C0E4EDB02DAE34EF00AF2F2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C0AC6E122DC8823B0000330F /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/aws-sdk-ios-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.40.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = C0E4ED902DAE34EE00AF2F2B /* Project object */;
+}
